@@ -1,11 +1,14 @@
 import "./App.css";
+import Title from "./components/Title";
+import AddUser from "./components/AddUser";
+import UsersList from "./components/UsersList";
 
 function App() {
   return (
     <div className="App">
-      <h1>User's list</h1>
-      <h2>ReactJS and Bootstrap</h2>
-      <button className="btn btn-primary">Test button</button>
+      <Title />
+      <AddUser />
+      <UsersList />
     </div>
   );
 }
