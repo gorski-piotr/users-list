@@ -1,0 +1,16 @@
+.user {
+  width: 300px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.delete-name:hover {
+  color: red;
+  cursor: pointer;
+}

@@ -4,8 +4,8 @@ import User from "./User"
 
 function UsersList() {
     return (
-        <div>
-            <ul>
+        <div >
+            <ul className="p-0">
                 <User />
                 <User />
                 <User />

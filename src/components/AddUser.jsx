@@ -2,9 +2,9 @@ import React from 'react'
 
 function AddUser() {
     return (
-        <div>
-            <input type="text" name="name" id="name"/>
-            <buttton className="btn btn-primary">Add name</buttton>
+        <div className="d-flex justify-content-center">
+            <input className="m-2" type="text" name="name" id="name" placeholder="User name"/>
+            <buttton className="btn btn-primary m-2">Add name</buttton>
         </div>
     )
 }
