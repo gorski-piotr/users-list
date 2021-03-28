@@ -1,11 +1,10 @@
-import "./App.css";
 import Title from "./components/Title";
 import AddUser from "./components/AddUser";
 import UsersList from "./components/UsersList";
 
 function App() {
   return (
-    <div className="App">
+    <div className="text-center mt-5">
       <Title />
       <AddUser />
       <UsersList />
