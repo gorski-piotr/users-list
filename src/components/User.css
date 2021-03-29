@@ -10,6 +10,10 @@ li {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+li:hover {
+  background-color: pink;
+}
+
 .delete-name:hover {
   color: red;
   cursor: pointer;
