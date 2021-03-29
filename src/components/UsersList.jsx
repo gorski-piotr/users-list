@@ -1,17 +1,21 @@
 import React from 'react';
-import User from "./User"
+import "./UsersList.css";
+import User from "./User";
 
+function UsersList({ users }) {
 
-function UsersList() {
+    // let usersList = props.usersList;
+    //console.log(users)
+
     return (
-        <div >
-            <ul className="p-0">
-                <User />
-                <User />
-                <User />
-                <User />
-            </ul>
-        </div>
+        users.map((user) => {
+            return (
+                <ul className="p-0">
+                    <User  user={user}/>
+                </ul>
+             )
+        })
+            
     )
 }
 
