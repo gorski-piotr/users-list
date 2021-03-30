@@ -1,22 +1,15 @@
-import React from 'react';
+import React from "react";
 import "./UsersList.css";
 import User from "./User";
 
-function UsersList({ users }) {
+function UsersList(props) {
+  let usersList = props.users.map((user) => {
+    return <User key={user.key} user={user} />;
+  });
 
-    // let usersList = props.usersList;
-    //console.log(users)
+  //console.log(users)
 
-    return (
-        users.map((user) => {
-            return (
-                <ul className="p-0">
-                    <User  user={user}/>
-                </ul>
-             )
-        })
-            
-    )
+  return <ul className="p-0">{usersList}</ul>;
 }
 
-export default UsersList
+export default UsersList;

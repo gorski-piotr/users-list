@@ -5,11 +5,16 @@ import React, { useState } from "react";
 
 function App() {
   const [users, setUsers] = useState([]);
-  const handleAddUser = (newName) => {
-    console.log(newName);
-    let stringName = newName.toString();
-    console.log(stringName);
-    setUsers([...users, stringName]);
+
+  const handleAddUser = (newUser) => {
+    console.log("users: ", users);
+    console.log("newUser: ", newUser);
+
+    setUsers((prevUsers) => {
+      console.log(prevUsers);
+      //   return prevUsers.concat(newUser);
+      return [...prevUsers, newUser];
+    });
   };
 
   return (
