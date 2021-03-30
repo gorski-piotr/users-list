@@ -7,7 +7,7 @@ function UsersList(props) {
     return <User key={user.key} user={user} />;
   });
 
-  //console.log(users)
+  console.log("users updated: ", props.users);
 
   return <ul className="p-0">{usersList}</ul>;
 }

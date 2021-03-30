@@ -11,7 +11,7 @@ function App() {
     console.log("newUser: ", newUser);
 
     setUsers((prevUsers) => {
-      console.log(prevUsers);
+      // console.log(prevUsers);
       //   return prevUsers.concat(newUser);
       return [...prevUsers, newUser];
     });
