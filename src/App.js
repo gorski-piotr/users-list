@@ -7,7 +7,7 @@ function App() {
   const [users, setUsers] = useState([]);
 
   const handleAddUser = (newUser) => {
-    console.log("users: ", users);
+    console.log("prevUsers: ", users);
     console.log("newUser: ", newUser);
 
     setUsers((prevUsers) => {
@@ -17,11 +17,22 @@ function App() {
     });
   };
 
+  const removeUser = (userKey) => {
+    console.log("current users: ", users);
+    console.log("user removed (App.js): ", userKey);
+
+    setUsers((prevUsers) => {
+      return prevUsers.filter((user) => {
+        return user.key !== userKey;
+      });
+    });
+  };
+
   return (
     <div className="text-center mt-5">
       <Title />
       <AddUser addUserMethod={handleAddUser} />
-      <UsersList users={users} />
+      <UsersList users={users} removeUser={removeUser} />
     </div>
   );
 }

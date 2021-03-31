@@ -2,7 +2,9 @@ import React from "react";
 
 function User(props) {
   const removeUser = () => {
-    alert("user removed");
+    // alert("user removed");
+    props.removeUser(props.user.key);
+    // console.log(props.user.name, props.user.key);
   };
 
   return (
