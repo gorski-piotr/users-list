@@ -4,7 +4,7 @@ function Title() {
   return (
     <div>
       <h1>User's list</h1>
-      <p>Created with ReactJS and Bootstrap.</p>
+      <p>Created with React.js and Bootstrap</p>
     </div>
   );
 }
